@@ -36,6 +36,6 @@ public class Context {
      */
     public static <T> Iterator<T> injectAll(Class<T> klass) {
         /* TODO: implement the right logic */
-        throw new UnsupportedOperationException("Method not implemented");
+        return ServiceLoader.load(klass).iterator();
     }
 }
